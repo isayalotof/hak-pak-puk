@@ -8,6 +8,7 @@ c.execute("""CREATE TABLE IF NOT EXISTS user_query(
     query_id INTEGER PRIMARY KEY AUTOINCREMENT,
     user_id INTEGER,
     query_info TEXT,
+    info TEXT,
     )""")
 
 db.commit()

@@ -2,7 +2,7 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMar
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 
-from data.db_func import get_user_rec_info
+from data.db_func import get_user_query_info
 
 
 main = ReplyKeyboardMarkup(
@@ -15,7 +15,7 @@ main = ReplyKeyboardMarkup(
 
 async def user_last_rec(user_id):
     keyboard = InlineKeyboardBuilder()
-    records = get_user_rec_info(user_id)
+    records = get_user_query_info(user_id)
     if len(records) == 0:
         keyboard.add(InlineKeyboardButton(text="Вы еще не делали запросов", callback_data=f'inforec_dec'))
         return keyboard.adjust(1).as_markup()

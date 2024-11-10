@@ -6,6 +6,7 @@ from fsm import user_fsm
 from main import get_photo
 from app.func import download_file
 from aiogram.fsm.context import FSMContext
+from data.db_func import get_user_rec_info
 
 import base64
 from api.api import ai_photo_work
@@ -39,11 +40,16 @@ async def handle_photo(message: Message, state: FSMContext):
     await download_file(await get_photo(message.photo[-1].file_id), file_path)
     with open("data/photo.jpg", "rb") as image_file:
         await state.update_data(resp_json=ai_photo_work(base64.b64encode(image_file.read()).decode("utf-8")))
-        data = await state.get_data()
-        add_user_search(message.from_user.id, data['resp_json']['name'])
-    await message.answer('тут информация')
+    data = await state.get_data()
+    info = 'тут информация'
+    await message.answer(info)
+    add_user_search(message.from_user.id, data['resp_json']['name'], info)
 
 
+@router.callback_query(F.data.startswith('inforec_'))
+async def set_place(callback: CallbackQuery, state: FSMContext):
+    info = get_user_rec_info(callback.from_user.id, callback.data.replace('inforec_', ''))
+    await callback.message.edit_text(info)
 
 
 
