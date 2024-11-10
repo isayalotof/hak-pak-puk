@@ -27,7 +27,7 @@ async def user_last_rec(user_id):
     records = get_user_query_info(user_id)
     if not records:
         keyboard.add(InlineKeyboardButton(text="Вы еще не делали запросов", callback_data='inforec_dec'))
-        return keyboard.adjust(1).as_markup()
+        return keyboard.as_markup()
     for rec in records[:10]:
         keyboard.add(InlineKeyboardButton(text=rec, callback_data=f'inforec_{rec}'))
-    return keyboard.adjust(1).as_markup()
+    return keyboard.as_markup()

@@ -13,12 +13,12 @@ async def download_file(file_url: str, file_name: str):
 
 def decode_image(img_base64):
     img_data = base64.b64decode(img_base64)
-    img = Image.open(BytesIO(img_data))
+    img = Image.open(BytesIO(img_data)).convert('RGB')
     return img
 
 def encode_image(img):
     buffered = BytesIO()
-    img.save(buffered, format="PNG")
+    img.save(buffered, format="JPEG")
     img_base64 = base64.b64encode(buffered.getvalue()).decode('utf-8')
     return img_base64
 
@@ -41,4 +41,4 @@ async def get_photo(file_id):
     return url
 
 def load_image(file_path):
-    return Image.open(file_path)
+    return Image.open(file_path).convert('RGB')

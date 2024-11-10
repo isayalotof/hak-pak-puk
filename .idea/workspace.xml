@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="522fe2e1-52c4-4526-a607-2bc028fe6072" name="Changes" comment="beta_1">
-      <change afterPath="$PROJECT_DIR$/app/bot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config_file/db.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/poisk.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/best.pt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/func.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/func.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/handlers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/keyboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/keyboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_file/cfg.py" beforeDir="false" afterPath="$PROJECT_DIR$/config_file/cfg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/db_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/db_func.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fsm/user_fsm.py" beforeDir="false" afterPath="$PROJECT_DIR$/fsm/user_fsm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,25 +50,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.api.executor&quot;: &quot;Run&quot;,
-    &quot;Python.database.executor&quot;: &quot;Run&quot;,
-    &quot;Python.db_func.executor&quot;: &quot;Run&quot;,
-    &quot;Python.handlers.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Alan.executor": "Run",
+    "Python.api.executor": "Run",
+    "Python.database.executor": "Run",
+    "Python.db_func.executor": "Run",
+    "Python.handlers.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/SystemX/Downloads/Alan.py",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="Push.Settings">
     <option name="SHOW_DETAILS_PANEL" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\SystemX\PycharmProjects\hak-pak-puk\config_file" />
       <recent name="C:\Users\SystemX\PycharmProjects\hak-pak-puk" />
+      <recent name="C:\Users\SystemX\PycharmProjects\hak-pak-puk\config_file" />
       <recent name="C:\Users\SystemX\PycharmProjects\hak-pak-puk\data\img" />
     </key>
   </component>
@@ -124,7 +114,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731204318859</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="beta_1">
+      <option name="closed" value="true" />
+      <created>1731219186024</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731219186024</updated>
+    </task>
+    <task id="LOCAL-00005" summary="beta_1">
+      <option name="closed" value="true" />
+      <created>1731219330704</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731219330704</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">

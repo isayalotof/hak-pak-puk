@@ -6,4 +6,6 @@ def ai_photo_work(image_base64):
     data = {
         "image_base64": image_base64
     }
-    return requests.post(url, json=data, headers=headers)
+
+    response = requests.post(url, json=data, headers=headers, timeout=30)
+    return response
